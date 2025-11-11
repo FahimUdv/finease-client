@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary : #000000;
+  --color-secondary : #e28c66;
+  --color-accent : #37cdbe;
+  --color-base-100 : #ffffff;
+  --color-base-200 : #effaf7;
+  --color-violet : #7b81a3;
+  --color-tgreen : #7aafa2;
+  --color-yellow : #e3a162;
+  --color-orange : #e28c66;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*{
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+
+.perspective {
+  perspective: 1000px;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+.group:hover .backface-hidden {
+  transition: transform 0.7s;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
