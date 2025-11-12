@@ -1,9 +1,10 @@
 import Footer from "Components/Footer";
 import Loading from "Components/Loading";
 import Navbar from "Components/Navbar";
-import bgImg from "../assets/cover.png";
+import bgImg from "../assets/cover.gif";
 import React from "react";
 import { Outlet, useNavigation } from "react-router";
+import Hero from "Components/Hero";
 
 const MainLayout = () => {
   const { state } = useNavigation();
@@ -14,6 +15,7 @@ const MainLayout = () => {
         style={{ backgroundImage: `url(${bgImg})` }}
       >
         <Navbar></Navbar>
+        <Hero></Hero>
       </div>
       <main className="flex-1 mx-auto w-full">
         {state == "loading" ? <Loading /> : <Outlet></Outlet>}

@@ -37,7 +37,9 @@ const Tips = () => {
       {/* Left side */}
       <div className="md:w-1/3 flex flex-col justify-center items-start text-center md:text-left">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-          Read Budgeting Tips
+          Read <span className="bg-gradient-to-r from-[#0c0f5c] to-[#5f0958] bg-clip-text text-transparent">
+            Budgeting
+          </span>{" "} Tips
         </h2>
         <p className="text-gray-600 my-5 leading-relaxed">
           Empower yourself to make smart financial decisions and achieve
